@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+
+:root {
+    --colorP: #B3B2B7;
+}
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+
+/* body */
+
+body {
+    background-image: url(../img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position-x: 56vw;
+    background-position-y: -200px;
+}
+
+
+/* header navbar*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 165px;
+}
+
+header i.fas.fa-bars {
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    padding-right: 28px;
+    font-size: 13px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #242E52;
+    transition: color 0.5s;
+}
+
+header nav ul li a:hover {
+    color: rgb(143, 148, 167);
+}
+
+button {
+    background-color: rgb(242, 95, 58);
+    color: #FFFFFF;
+    border: none; 
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: 500;
+    padding: 12.5px 30.5px 14px 30.5px;
+    transition: background 0.5s;  
+}
+
+
+button.GS:hover {
+    background: #f79f89;  
+}
+
+
+/* main */
+
+/* primera section */
+section {
+    display: flex;
+    margin: 0px 165px; /* ver si del right también queda bien */
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 130px;
+}
+
+section.home div {
+    width: 480px;
+    color: #232C50;
+}
+
+section.home div h1 {
+    font-size: 58px;
+    margin-bottom: 28px;
+}
+
+section.home div p {
+    width: 350px;
+    padding-bottom: 28px;
+    font-weight: 500;
+    color: var(--colorP)
+}
+
+section.home img {
+    position: relative;
+    margin-right: -5%;
+}
+
+
+/* segunda section */
+section.nosotros div.different {
+    width: 450px;
+    align-self: flex-start;
+}
+
+section.nosotros div.different h2 {
+    font-size: 36px;
+    padding-bottom: 36px;
+    color: #232851;
+}
+
+section.nosotros div.different p {
+    width: 337px;
+    line-height: 24px;
+    color: var(--colorP)
+}
+
+
+section.nosotros div.qualities {
+    width: 460px;
+    padding-top: 10px;
+    width: 550px;
+}
+
+section.nosotros div.qualities article {
+    display: flex; 
+    flex-direction: column; 
+    padding-bottom: 43px;
+}
+
+section.nosotros div.qualities article div {
+    display: flex;
+    align-items: center;   
+}
+
+section.nosotros div.qualities article div button.numbers {
+    padding: 10px 25px;
+    font-weight: 700;
+    cursor:unset;
+    align-self: flex-start;
+    font-size: 16px;
+}
+
+section.nosotros div.qualities article div h3 {
+    font-size: 16px;
+    color: #323851;
+    padding-left: 23px;
+}
+
+section.nosotros div.qualities article p {
+    color: var(--colorP);
+    padding: 8px 0px 0px 93px;
+    width: 437px;
+    line-height: 25px;
+}
+
+
+
+/* tercer section - testimonios */
+section.testimonios {
+    display: block;
+    text-align: center;
+    margin: 0px 71px;
+}
+
+section.testimonios h2 {
+    color: #242E53;
+    font-size: 40px;
+}
+
+section.testimonios div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin-top: 109px;  
+}
+
+section.testimonios div article {
+    position: relative;
+    background-color: rgb(249, 249, 249);
+    width: 420px;
+}
+
+section.testimonios div article p.nombre {
+    color: #3F4868;
+    font-weight: 700;
+    padding: 56px 0px 21px;
+}
+
+section.testimonios div article p.comentario {
+    color: var(--colorP);
+    font-weight: 500;
+    padding: 0px 10px 39px;
+}
+
+section.testimonios div article img {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -15%;
+    left: 41%;
+
+}
+
+section.testimonios button {
+    margin: 45px 0px 50px;
+}
+
+
+
+/* marco */
+main div.marco {
+    background-color: #F3613C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 164px;
+    width: 100%;
+
+    /* background-image: url(../img/bg-tablet-pattern.svg);   
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+} */
+}
+
+
+main div.marco p {
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFFFFF;
+    width: 450px;
+}
+
+main div.marco button.GSWhite {
+    background-color: #FFFFFF;
+    color: #F3603B;
+    transition: color 0.5s;
+}
+
+main div.marco button.GSWhite:hover {
+    color: #f79f89;
+}
+
+
+
+
+
+
+/* footer */
+footer {
+    background: #1E1E26;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 53px 173px;
+}
+
+footer div.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0px 6px;
+}
+
+footer div.social div.icons {
+    display: flex;
+    justify-content: space-between;   
+}
+
+footer div.social div.icons a i {
+    color: white;
+    font-size: 20px;
+    transition: color 0.8s;
+}
+
+footer div.social div.icons a i:hover {
+    color: #F3603B;
+}
+
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    width: 395px;
+    height: 142px;
+    padding: 0px;
+}
+
+footer ul li {
+    padding: 6px 0px;
+    padding-right: 55%;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.8s;
+}
+
+footer ul li a:hover {
+    color: #F3603B;
+}
+
+footer div.suscripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer div.suscripcion form input {
+    border-radius: 50px;
+    padding: 12.5px 48px 12.5px 20px;
+    border: none;
+    margin-right: 9px;
+    width: 201px;
+}
+
+footer div.suscripcion form input[type=email]:invalid {
+    border: solid 2px red;
+}
+
+
+footer div.suscripcion form button:hover {
+    background: #f79f89;
+}
+
+
+/* div.suscripcion */
+footer p {
+    align-self: flex-end;
+    font-size: 12.5px;
+    color: #8C8C94;
+    position: absolute;
+    right: 175px;
+}
+
+
+
+/* desktop 1440px */
+@media (max-width: 1440px) {
+    section.testimonios div article:nth-child(4n) {
+        display: none;
+    }
+
+} 
+
+
+/* mobile  375px*/
+@media (max-width: 375px) {
+
+    body {
+        background-position-x: 56vw;
+        background-position-y: -200px;
+    }
+
+    header {
+        flex-wrap: wrap;
+        padding: 25px 25px
+    }
+
+    header img {
+        padding-top: 5px;
+    }
+
+    header div.nav nav {
+        display: none;
+    }
+
+    header div.nav i.fas.fa-bars {
+        display: block;
+        padding-right: 20px;
+        font-size: 30px;
+        color: #242E52;
+    }
+
+    header div.nav:hover nav {
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
+        top: 60px;
+        left: 0px;
+        background: #242E52;
+    }
+
+    header div.nav nav ul {
+        padding: 0px;
+    }
+
+    header div.nav nav ul li {
+        font-size: 12px;
+        padding: 0px 15px 5px 0px;
+        
+    }
+
+    header div.nav nav ul li a {
+        color: white;   
+    }
+
+    header div.nav nav ul li a:hover {
+        color: #F3603B;
+    }
+
+    header button {
+        display: none;
+    }
+
+    main section {
+        flex-wrap: wrap;
+        margin: 0px 0px 0px 5px;
+        padding-bottom: 0px;
+    }
+
+    section.home {
+        padding-bottom: 80px;
+    }
+
+    section.home div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.home div h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    section.home div p {
+        width: 90%;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    section.home img{
+        width: 100%;
+        order: -1;
+    }
+
+    section.nosotros div.different {
+        padding-bottom: 60px;
+    }
+
+    section.nosotros div.different h2 {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    section.nosotros div.different p {
+        text-align: center;
+    }
+
+    section.nosotros div.qualities article div {
+        background: rgb(255, 239, 234);
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    section.nosotros div.qualities article div h3 {
+        padding: 0px 0px 3px 14px;
+    }
+
+    section.nosotros div.qualities article p {
+        padding: 12px 0px 0px 0px;
+        width: 90%;
+        font-size: 14px;
+    }
+
+
+    section.testimonios {
+        margin: 5px;
+    }
+
+    section.testimonios h2 {
+        font-size: 30px;
+    }
+
+    section.testimonios div article:nth-child(2n+1) {
+        display: none;
+    }
+
+    main div.marco {
+        flex-wrap: wrap;
+        padding: 64px 25px;
+        justify-content: center; 
+    }
+
+    main div.marco p {
+        text-align: center;
+    }
+
+    main div.marco button.GSWhite {
+        margin: 25px 0px 25px 0px;
+    }
+
+    /* footer*/
+    footer {
+        flex-wrap: wrap-reverse;
+        padding: 40px 20px 0px 20px;
+        justify-content: center;
+    }
+
+    footer div.social {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 45px;
+        padding: 0px;
+    }
+
+    footer div.social div.icons {
+        width: 90%;
+        padding: 30px 0px 45px;
+    }
+
+    footer div.social div.icons a i {
+        font-size: 30px;
+    }
+
+    footer ul {
+        align-content: space-between;
+        padding: 0px 20px 0px 30px;
+    }
+
+    footer ul li {
+        padding-right: 0%;
+    }
+
+    footer div.suscripcion {
+        margin-bottom: 45px;
+        width: 100%;
+    }
+
+    footer div.suscripcion form input {
+        margin-right: 6px;
+        width: 73%;
+    }
+
+    footer div.suscripcion form button {
+        text-transform: uppercase;
+    }
+
+    footer p {
+        position: unset;
+        order: -1;
+        padding-bottom: 30px;
+    }
+}
+
